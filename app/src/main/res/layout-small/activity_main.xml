@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/paulinofampic"
+    android:gravity="center"
+    tools:context="com.paulino.haroldo.haroldportfolio.MainActivity">
+
+    <ImageButton
+        android:id="@+id/pictureImageButton"
+        android:layout_width="200dp"
+        android:layout_height="220dp"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/my_photo"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:src="@drawable/my_photo"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="Haroldo Paulino"
+        style="@style/font9"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:gravity="center"
+        android:text="559 E 2200 S\nClearfield, Utah 84015"
+        style="@style/font2"
+        android:padding="10dp"
+        android:id="@+id/addressTextView"/>
+
+    <TextView
+        android:gravity="center"
+        android:text="(801) 502-5237"
+        style="@style/font2"
+        android:padding="10dp"
+        android:id="@+id/phoneNumberTextView"/>
+
+    <TextView
+        android:gravity="center"
+        android:text="haroldopaulino@hotmail.com"
+        style="@style/font2"
+        android:padding="10dp"
+        android:id="@+id/emailTextView"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_gravity="bottom|center"
+        android:gravity="bottom"
+        android:paddingBottom="20dp"
+        android:orientation="vertical" >
+
+        <SeekBar
+            android:id="@+id/swipeSeekbar"
+            android:layout_width="match_parent"
+
+            android:minHeight="8dip"
+            android:maxHeight="8dip"
+
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+
+            android:progressDrawable="@drawable/progress"
+            android:thumb="@drawable/seekbar_thumb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:keepScreenOn="true"
+            android:text="Swipe to continue >>>"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

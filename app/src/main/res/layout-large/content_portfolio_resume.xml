@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PortfolioResumeActivity"
+    android:background="#222222"
+    tools:showIn="@layout/activity_portfolio_resume">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/paulinofampic" >
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/searchLayout" >
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    style="@style/font2"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:id="@+id/backTextView"
+                    android:text="&lt; back" />
+
+                <EditText
+                    style="@style/edittext_model_1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:hint="Search"
+                    android:id="@+id/searchEditText"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/searchListLayout" >
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        style="@style/font8"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:id="@+id/searchMatchesTextView"
+                        android:text="nothing found" />
+
+                    <TextView
+                        style="@style/font2"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:id="@+id/closeSearchTextView"
+                        android:text="close search"
+                        android:gravity="right" />
+                </LinearLayout>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/searchListView"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mainLayout"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:paddingBottom="0dp"
+                android:paddingLeft="20dp"
+                android:orientation="vertical"
+                android:background="#00999999"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/textViewResume"
+                    android:text="RESUME"
+                    style="@style/font8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="#33FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp">
+                    <TableLayout
+                        android:id="@+id/tableLayout1"
+                        android:background="@null"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TableRow style="@style/MainTableRow" >
+
+                            <LinearLayout style="@style/MainTableRowLinearLayout" >
+
+                                <ImageButton
+                                    android:id="@+id/qualificationsImageButton"
+                                    android:src="@drawable/icon1"
+                                    style="@style/MainImage" />
+
+                                <TextView android:id="@+id/textView4"
+                                    android:text="Qualifications"
+                                    style="@style/MainImageText" >
+                                </TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout style="@style/MainTableRowLinearLayout" >
+
+                                <ImageButton
+                                    android:id="@+id/technicalSkillsImageButton"
+                                    android:src="@drawable/icon2"
+                                    style="@style/MainImage" />
+
+                                <TextView android:id="@+id/textView5"
+                                    android:text="Technical Skills"
+                                    style="@style/MainImageText" >
+                                </TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout style="@style/MainTableRowLinearLayout" >
+
+                                <ImageButton
+                                    android:id="@+id/professionalExperienceImageButton"
+                                    android:src="@drawable/icon3"
+                                    style="@style/MainImage" />
+
+                                <TextView android:id="@+id/textView6"
+                                    android:text="Professional Experience"
+                                    style="@style/MainImageText" >
+                                </TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout style="@style/MainTableRowLinearLayout" >
+
+                                <ImageButton
+                                    android:id="@+id/educationImageButton"
+                                    android:src="@drawable/icon4"
+                                    style="@style/MainImage" />
+
+                                <TextView android:id="@+id/textView7"
+                                    android:text="Education"
+                                    style="@style/MainImageText" >
+                                </TextView>
+
+                            </LinearLayout>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingTop="10dp"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="20dp"
+                    android:orientation="vertical"
+                    android:background="#00999999"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:id="@+id/textViewPortfolio"
+                        android:text="PORTFOLIO"
+                        style="@style/font8" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:background="#33FFFFFF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp">
+                        <TableLayout
+                            android:id="@+id/tableLayout2"
+                            android:background="@null"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TableRow style="@style/MainTableRow" >
+
+                                <LinearLayout style="@style/MainTableRowLinearLayout"
+                                    android:id="@+id/ownershipLinearLayout" >
+
+                                    <ImageButton
+                                        android:id="@+id/ownershipImageButton"
+                                        android:src="@drawable/ownership_small"
+                                        style="@style/MainImageSmall" />
+
+                                    <TextView android:text="Ownership"
+                                        android:id="@+id/ownershipTextView"
+                                        style="@style/MainImageTextSmall" >
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <LinearLayout style="@style/MainTableRowLinearLayout"
+                                    android:id="@+id/coverLetterLinearLayout" >
+
+                                    <ImageButton
+                                        android:id="@+id/coverLetterImageButton"
+                                        android:src="@drawable/cover_letter_small"
+                                        style="@style/MainImageSmall" />
+
+                                    <TextView android:text="Cover Letter"
+                                        android:id="@+id/coverLetterTextView"
+                                        style="@style/MainImageTextSmall" >
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <LinearLayout style="@style/MainTableRowLinearLayout"
+                                    android:id="@+id/referencesLinearLayout" >
+
+                                    <ImageButton
+                                        android:id="@+id/referencesImageButton"
+                                        android:src="@drawable/references_small"
+                                        style="@style/MainImageSmall" />
+
+                                    <TextView android:text="References"
+                                        android:id="@+id/referencesTextView"
+                                        style="@style/MainImageTextSmall" >
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <LinearLayout style="@style/MainTableRowLinearLayout"
+                                    android:id="@+id/recommendationsLinearLayout" >
+
+                                    <ImageButton
+                                        android:id="@+id/recommendationsImageButton"
+                                        android:src="@drawable/recommendations_small"
+                                        style="@style/MainImageSmall" />
+
+                                    <TextView android:text="Recommendations"
+                                        android:id="@+id/recommendationsTextView"
+                                        style="@style/MainImageTextSmall" >
+                                    </TextView>
+
+                                </LinearLayout>
+                            </TableRow>
+                            <TableRow style="@style/MainTableRow" >
+
+                                <LinearLayout style="@style/MainTableRowLinearLayout"
+                                    android:id="@+id/membershipsLinearLayout" >
+
+                                    <ImageButton
+                                        android:id="@+id/membershipsImageButton"
+                                        android:src="@drawable/memberships_small"
+                                        style="@style/MainImageSmall" />
+
+                                    <TextView android:text="Memberships"
+                                        android:id="@+id/membershipsTextView"
+                                        style="@style/MainImageTextSmall" >
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <LinearLayout style="@style/MainTableRowLinearLayout"
+                                    android:id="@+id/designLinearLayout" >
+
+                                    <ImageButton
+                                        android:id="@+id/designImageButton"
+                                        android:src="@drawable/design_small"
+                                        style="@style/MainImageSmall" />
+
+                                    <TextView android:text="Design"
+                                        android:id="@+id/designTextView"
+                                        style="@style/MainImageTextSmall" >
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <LinearLayout style="@style/MainTableRowLinearLayout"
+                                    android:id="@+id/goalsLinearLayout" >
+
+                                    <ImageButton
+                                        android:id="@+id/goalsImageButton"
+                                        android:src="@drawable/goals_small"
+                                        style="@style/MainImageSmall" />
+
+                                    <TextView android:text="Goals"
+                                        android:id="@+id/goalsTextView"
+                                        style="@style/MainImageTextSmall" >
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <LinearLayout style="@style/MainTableRowLinearLayout"
+                                    android:id="@+id/powerStatementsLinearLayout" >
+
+                                    <ImageButton
+                                        android:id="@+id/powerStatementsImageButton"
+                                        android:src="@drawable/power_statements_small"
+                                        style="@style/MainImageSmall" />
+
+                                    <TextView android:text="Power Statements"
+                                        android:id="@+id/powerStatementsTextView"
+                                        style="@style/MainImageTextSmall" >
+                                    </TextView>
+
+                                </LinearLayout>
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingTop="10dp"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="20dp"
+                    android:orientation="vertical"
+                    android:background="#00999999"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:id="@+id/textViewWorkSamples"
+                        android:text="WORK SAMPLES"
+                        style="@style/font8" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:background="#33FFFFFF"
+                    android:layout_height="wrap_content" >
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/portfolioListView"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

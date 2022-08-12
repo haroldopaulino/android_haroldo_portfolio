@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Haroldo\'s Portfolio</string>
+
+    <string name="content_description"> </string>
+    <string name="my_photo">My Photo</string>
+    <string name="title_activity_portfolio_resume">MY PORTFOLIO</string>
+    <string name="title_activity_topic">A TOPIC</string>
+    <string name="title_activity_detail">DetailActivity</string>
+</resources>
