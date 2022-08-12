@@ -1,4 +1,6 @@
-# Haroldo's Portfolio - Android App (Native/Webviews Android App – Java, HTML, XML, SQLite)
+# Haroldo's Portfolio - Android App
+
+Development Overview -> *Native/Webviews Android App - Java, HTML, XML, SQLite*
 
 Yes, I’ve decided to build my entire portfolio as an Android App.
 
